@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "mongoURI": "mongodb+srv://vlad_dev:SJRjrlnAc2yMjllS@cluster0.hvqur.mongodb.net/social_network?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
