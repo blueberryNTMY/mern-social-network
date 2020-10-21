@@ -4,11 +4,11 @@ import Home from "./pages/Home/Home";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 
-interface IRoutesProps {
-  isAuth: boolean;
-}
+// interface IRoutesProps {
+//   isAuth: boolean;
+// }
 
-export const useRoutes: React.FC<IRoutesProps> = (isAuth) => {
+export const useRoutes = (isAuth: boolean) => {
   return isAuth ? (
     <Switch>
       <Route path="/" exact component={Home} />

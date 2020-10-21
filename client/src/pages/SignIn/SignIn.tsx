@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 
 const SignIn = () => {
-  const [validated, setValidated] = useState(null);
+  const [validated, setValidated] = useState<boolean>(false);
 
-  const hadleSubmit = (event) => {
+  const hadleSubmit = (event: React.ChangeEvent<HTMLInputElement>) => {
     const form = event.currentTarget;
 
     if (!form.checkValidity()) {
@@ -14,6 +14,7 @@ const SignIn = () => {
 
     setValidated(true);
   };
+  
   return (
     <Container>
       <Form noValidate validated={validated} onSubmit={hadleSubmit}>
